@@ -1,7 +1,7 @@
 import "./App.css";
 import { useEffect } from "react";
 import { MainPage } from "./pages/main-page";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
+import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
 import { Shop } from "./pages/shop";
 import { Frens } from "./pages/frens";
 import { Tasks } from "./pages/tasks";
@@ -21,7 +21,7 @@ function App() {
           <Route path="/shop" element={<Shop />} />
           <Route path="/frens" element={<Frens />} />
           <Route path="/tasks" element={<Tasks />} />
-          <Route path="*" element={<MainPage />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
       </BrowserRouter>
     </div>
