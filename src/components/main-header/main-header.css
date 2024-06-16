@@ -1,0 +1,9 @@
+header {
+  background-color: white;
+  box-shadow: 0 -10px 100px 20px white;
+  height: 10rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}

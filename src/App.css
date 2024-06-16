@@ -8,3 +8,11 @@ body {
   background: var(--tg-theme-bg-color);
   color: var(--tg-theme-text-color);
 }
+
+.App {
+  width: 100vh;
+  height: 100vw;
+  background-image: url("./images/body.png");
+  background-size: cover;
+  background-position: center;
+}
