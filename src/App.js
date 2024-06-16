@@ -5,6 +5,7 @@ import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
 import { Shop } from "./pages/shop";
 import { Frens } from "./pages/frens";
 import { Tasks } from "./pages/tasks";
+import { NavigationMenu } from "./components/navigation/navigation";
 
 const tg = window.Telegram.WebApp;
 
@@ -16,13 +17,16 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
-          <Route path="" element={<MainPage />} />
-          <Route path="/shop" element={<Shop />} />
-          <Route path="/frens" element={<Frens />} />
-          <Route path="/tasks" element={<Tasks />} />
-          <Route path="*" element={<Navigate to="/" />} />
-        </Routes>
+        <div className="mainWrapper">
+          <Routes>
+            <Route path="" element={<MainPage />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/frens" element={<Frens />} />
+            <Route path="/tasks" element={<Tasks />} />
+            <Route path="*" element={<Navigate to="/" />} />
+          </Routes>
+        </div>
+        <NavigationMenu />
       </BrowserRouter>
     </div>
   );

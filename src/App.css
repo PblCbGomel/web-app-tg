@@ -16,4 +16,11 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.mainWrapper {
+  height: 88%;
 }
