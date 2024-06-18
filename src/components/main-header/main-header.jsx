@@ -10,10 +10,10 @@ export function MainHeader() {
         <img
           width="65"
           height="65"
-          src="./images/photo.webp"
+          src={tg?.user?.photo_url || "./images/photo.webp"}
           className="user-photo"
         />
-        {tg.initData + tg?.initDataUnsafe?.user?.username || "UserName"}
+        {tg?.user?.username || "UserName"}
       </div>
       <div className="streak">
         <div>000</div>
