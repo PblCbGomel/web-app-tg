@@ -1,7 +1,7 @@
 import React from "react";
 import "./main-header.css";
 
-const tg = window.Telegram.WebApp.WebAppInitData();
+const tg = window.Telegram.WebApp;
 
 export function MainHeader() {
   return (
