@@ -6,6 +6,7 @@ import "./pages.css";
 function CharacterWrapper() {
   return (
     <div className="character-wrapper">
+      <MainHeader />
       <Score />
       <Character />
     </div>
@@ -15,7 +16,6 @@ function CharacterWrapper() {
 export function MainPage() {
   return (
     <>
-      <MainHeader />
       <CharacterWrapper />
     </>
   );
