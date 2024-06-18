@@ -14,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  width: 45%;
 }
 
 .score-image {
