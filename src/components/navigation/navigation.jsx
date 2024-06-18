@@ -1,24 +1,32 @@
 import "./navigation.css";
-import { Link } from "react-router-dom";
+import { NavigationButton } from "./button";
+
+const navigationInfo = [
+  { text: "Shop", imgSrc: "./navBtns/shop.png", link: "/shop" },
+  { text: "Tasks", imgSrc: "./navBtns/tasks.png", link: "/tasks" },
+  { text: "Frens", imgSrc: "./navBtns/frens.png", link: "/frens" },
+];
 
 export function NavigationMenu() {
   return (
     <nav>
       <div className="homeWrapper">
-        <Link to="/">
-          <div className="home btn"></div>
-        </Link>
+        <NavigationButton
+          text={"Home"}
+          imgSrc={"./navBtns/home.png"}
+          link={"/"}
+        />
       </div>
       <div className="otherWrapper">
-        <Link to="/shop">
-          <div className="shop btn"></div>
-        </Link>
-        <Link to="/tasks">
-          <div className="tasks btn"></div>
-        </Link>
-        <Link to="/frens">
-          <div className="frens btn"></div>
-        </Link>
+        {navigationInfo.map((info) => {
+          return (
+            <NavigationButton
+              text={info.text}
+              imgSrc={info.imgSrc}
+              link={info.link}
+            />
+          );
+        })}
       </div>
     </nav>
   );
