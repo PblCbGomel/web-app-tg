@@ -21,6 +21,7 @@ export function NavigationMenu() {
         {navigationInfo.map((info) => {
           return (
             <NavigationButton
+              key={info.text}
               text={info.text}
               imgSrc={info.imgSrc}
               link={info.link}

@@ -4,6 +4,46 @@ header {
   height: 110px;
   width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 1rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.user-info,
+.goal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-photo {
+  border-radius: 15px;
+}
+
+.streak,
+.kkal-fire {
+  background-size: cover;
+  width: 60px;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+
+.streak {
+  background-image: url(../../../public/images/streak.png);
+  font-size: 28px;
+  font-style: normal;
+  color: rgb(244, 182, 44);
+  font-weight: 700;
+  text-shadow: rgba(244, 182, 44, 0.44) 0px 2px 4px;
+}
+
+.kkal-fire {
+  background-image: url(../../../public/images/fire.png);
+  font-size: 20px;
+  font-style: normal;
+  color: white;
+  font-weight: 700;
+  text-shadow: rgba(255, 255, 255, 0.44) 0px 2px 4px;
 }
