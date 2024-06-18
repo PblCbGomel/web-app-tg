@@ -6,6 +6,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  color: rgb(134, 134, 134);
 }
 
 .user-info,
