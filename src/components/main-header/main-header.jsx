@@ -13,7 +13,7 @@ export function MainHeader() {
           src="./images/photo.webp"
           className="user-photo"
         />
-        {tg?.initDataUnsafe?.user?.username || "UserName"}
+        {window.Telegram?.initDataUnsafe?.user?.username || "UserName"}
       </div>
       <div className="streak">
         <div>000</div>
