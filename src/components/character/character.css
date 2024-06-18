@@ -1,7 +1,7 @@
 .character {
   background-image: url("../../images/сharacter.png");
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   width: 200px;
-  height: 320px;
+  height: 210px;
 }

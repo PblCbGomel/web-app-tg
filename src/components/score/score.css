@@ -1,0 +1,30 @@
+.score-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.score-item {
+  background-color: #00000010;
+  border-radius: 10px;
+  position: relative;
+  height: 50px;
+  width: 40%;
+  padding: 0 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.score-image {
+  filter: drop-shadow(0 0 5px gold);
+  -webkit-filter: drop-shadow(0 0 5px gold);
+}
+
+.score-info {
+  width: 20%;
+  font-size: 36px;
+  line-height: 50px;
+  color: white;
+  font-weight: 700;
+}
