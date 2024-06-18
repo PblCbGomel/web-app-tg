@@ -5,6 +5,7 @@ nav {
   align-items: end;
   gap: 1rem;
   padding: 0 1rem;
+  justify-content: center;
 }
 
 .homeWrapper {
@@ -23,7 +24,7 @@ nav {
   width: 65%;
   height: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
