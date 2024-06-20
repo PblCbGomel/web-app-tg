@@ -17,6 +17,7 @@ function App() {
 
   return (
     <div className="App">
+      {tg.initDataUnsafe.user.username}
       <BrowserRouter>
         <div className="mainWrapper">
           <Routes>
