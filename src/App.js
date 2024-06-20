@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { MainPage } from "./pages/main-page";
 import { Route, Routes, BrowserRouter, Navigate } from "react-router-dom";
 import { Shop } from "./pages/shop";
-import { Frens } from "./pages/frens";
+import { Friends } from "./pages/friends";
 import { Tasks } from "./pages/tasks";
 import { NavigationMenu } from "./components/navigation/navigation";
 
@@ -22,7 +22,7 @@ function App() {
           <Routes>
             <Route path="" element={<MainPage />} />
             <Route path="/shop" element={<Shop />} />
-            <Route path="/frens" element={<Frens />} />
+            <Route path="/frens" element={<Friends />} />
             <Route path="/tasks" element={<Tasks />} />
             <Route path="*" element={<Navigate to="/" />} />
           </Routes>
