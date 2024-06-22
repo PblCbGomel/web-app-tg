@@ -4,4 +4,26 @@
   background-position: center;
   width: 200px;
   height: 210px;
+  transition: 0.3s;
+}
+
+.character:active {
+  transform: scale(1.2);
+  animation: 0.3s linear character-click;
+  transition: 0.3s;
+}
+
+@keyframes character-click {
+  0% {
+    rotate: 0;
+  }
+  33% {
+    rotate: 15deg;
+  }
+  67% {
+    rotate: -30deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
 }
