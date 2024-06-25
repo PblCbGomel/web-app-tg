@@ -1,7 +1,7 @@
 import "./score.css";
 import { useContext } from "react";
 import { ScoreContext } from "../score-context/score-context";
-s;
+
 export function Score() {
   const { energy, coins } = useContext(ScoreContext);
   return (
