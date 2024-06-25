@@ -1,9 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./main-header.css";
 
 const tg = window.Telegram.WebApp;
 
 export function MainHeader() {
+  const [streak, setStreak] = useState(0);
+  const [kkal, useKkal] = useState(0); //потом приделать kkal мб надо будет через контекст, т.к. эта инфа получается из еды на фото (но я не уверен)
+
+  useEffect(() => {
+    //запрос для получения streak
+  });
+
   return (
     <header>
       <div className="user-info">
@@ -16,7 +23,7 @@ export function MainHeader() {
         {tg?.initDataUnsafe?.user?.username || "UserName"}
       </div>
       <div className="streak">
-        <div>000</div>
+        <div>{streak}</div>
       </div>
       <div className="goal">
         <img
