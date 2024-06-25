@@ -2,31 +2,35 @@ import "./character.css";
 import { useContext, useEffect } from "react";
 import { ScoreContext } from "../score-context/score-context";
 
+let newEnergy;
+let newCoins;
+
 export function Character() {
   const { energy, coins, setEnergy, setCoins } = useContext(ScoreContext);
 
-  let energyToUpdate = 0;
-  let coinsToUpdate = 0;
-
-  function updateDataOnServer() {
-    //запрос для изменения количества энергии и монеток на energyToUpdate coinsToUpdate
-  }
-
-  const intervalUpdate = setInterval(updateDataOnServer, 1000);
+  const updateDataOnServer = () => {
+    //запрос для изменения количества энергии и монеток на energy, coins
+    //типа fetch(url, {data: {newCoins: coins, newEnergy: energy}})
+    console.log(newEnergy, newCoins); //прст пока каждую секунду отправляет в консось инфу
+  };
 
   const handleOnclick = () => {
-    energyToUpdate++;
-    coinsToUpdate++;
+    newEnergy++;
+    newCoins++;
     setEnergy(energy + 1);
     setCoins(coins + 1);
   };
 
   useEffect(() => {
+    newEnergy = energy;
+    newCoins = coins;
+    const intervalUpdate = setInterval(updateDataOnServer, 1000);
+
     return () => {
-      updateDataOnServer();
+      setTimeout(updateDataOnServer, 0);
       clearInterval(intervalUpdate);
     };
-  });
+  }, []);
 
   return <div className="character" onClick={handleOnclick}></div>;
 }
