@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./main-header.css";
-
-const tg = window.Telegram.WebApp;
+import { tg } from "../../App";
 
 export function MainHeader() {
   const [streak, setStreak] = useState(0);

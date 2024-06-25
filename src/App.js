@@ -7,7 +7,7 @@ import { Friends } from "./pages/friends";
 import { Tasks } from "./pages/tasks";
 import { NavigationMenu } from "./components/navigation/navigation";
 
-const tg = window.Telegram.WebApp;
+export const tg = window.Telegram.WebApp;
 
 function App() {
   useEffect(() => {

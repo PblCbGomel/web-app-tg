@@ -12,4 +12,5 @@
 .carousel-wrapper {
   overflow: hidden;
   height: 160px;
+  display: none;
 }
